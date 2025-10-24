@@ -21,4 +21,12 @@
   --nav-button-hover-bg: var(--color-primary-hover); /* Цвет фона кнопки при наведении */
   --nav-button-active-bg: var(--color-primary-active); /* Цвет фона кнопки при активации */
   --nav-button-text-color: var(--color-white); /* Цвет текста кнопки */
+  --footer-bg-color: var(--color-gray-900);
+  --footer-description-color: var(--color-white);
+  --footer-text-color: var(--color-white);
+  --footer-icon-color: var(--color-white);
+  --footer-splitter-color: var(--color-white);
+  --footer-copyright-bg-color: rgb(255 255 255 / 5%);
+
+  /* --footer-copyright-bg-color: var(--color-gray-700); */
 }
