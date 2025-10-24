@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--color-page-bg);
+  background-color: var(--color-white);
 }
 
 .page__header {
@@ -15,5 +15,5 @@
 
 .page__footer {
   flex-shrink: 0;
-  background-color: var(--color-footer-bg);
+  background-color: var(--color-white);
 }
