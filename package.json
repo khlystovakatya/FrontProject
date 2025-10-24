@@ -23,9 +23,22 @@
     "postcss-custom-media": "^11.0.6",
     "postcss-nesting": "^13.0.2",
     "prettier": "^3.6.2",
-    "stylelint": "^16.23.1",
-    "stylelint-config-standard": "^39.0.0",
+    "stylelint": "^16.25.0",
+    "stylelint-config-standard": "^39.0.1",
     "stylelint-prettier": "^5.0.3",
-    "vite": "^7.1.2"
-  }
+    "vite": "^7.1.12"
+  },
+  "description": "",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khlystovakatya/FrontProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khlystovakatya/FrontProject/issues"
+  },
+  "homepage": "https://github.com/khlystovakatya/FrontProject#readme"
 }
