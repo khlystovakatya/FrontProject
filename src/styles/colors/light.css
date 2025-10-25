@@ -31,4 +31,12 @@
   /* --footer-copyright-bg-color: var(--color-gray-700); */
 
   --banner-statistic-caption: var(--color-gray-800);
+  --media-content-image-darkened: var(--color-gray-900);
+  --button-play-bg: var(--color-primary);
+  --button-play-hover-bg: var(--color-primary-hover);
+  --button-play-active-bg: var(--color-primary-active);
+  --button-sound-bg: var(--color-gray-400);
+  --button-sound-hover-bg: var(--color-gray-400);
+  --button-sound-active-bg: var(--color-gray-400);
+  --button-sound-icon-color: var(--color-white);
 }
