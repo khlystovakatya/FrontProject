@@ -45,4 +45,12 @@
   --news-card-description-color: var(--color-gray-600); /* Цвет для описания новости */
   --news-card-link-text-color: var(--color-gray-900); /* Цвет текста ссылки в карточке */
   --news-card-link-hover-text-color: var(--color-primary); /* Цвет текста ссылки при наведении */
+
+  /* Цвета для careers */
+  --careers-background-color: var(--color-gray-200); /* Цвет фона для раздела Careers */
+  --careers-title-color: var(--color-gray-900); /* Цвет заголовка в разделе Careers */
+  --careers-description-color: var(--color-gray-800); /* Цвет описания в разделе Careers */
+  --careers-button-bg: var(--color-primary); /* Цвет фона кнопки в разделе Careers */
+  --careers-button-hover-bg: var(--color-primary-hover); /* Цвет фона кнопки при наведении */
+  --careers-button-text-color: var(--color-white); /* Цвет текста на кнопке */
 }
