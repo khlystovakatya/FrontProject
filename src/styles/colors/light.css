@@ -29,4 +29,20 @@
   --footer-copyright-bg-color: rgb(255 255 255 / 5%);
 
   /* --footer-copyright-bg-color: var(--color-gray-700); */
+
+  /* Цвета для latest-news */
+  --latest-news-title-color: var(--color-gray-900); /* Цвет заголовка новостей */
+  --latest-news-subtitle-color: var(--color-gray-600); /* Цвет подзаголовка новостей */
+  --latest-news-button-bg: var(--color-primary); /* Цвет фона кнопки новостей */
+  --latest-news-button-hover-bg: var(--color-primary-hover); /* Цвет фона кнопки при наведении */
+  --latest-news-button-text-color: var(--color-white); /* Цвет текста кнопки новостей */
+
+  /* Цвета для карточек новостей */
+  --news-card-category-color: var(--color-gray-700); /* Цвет для категории новости */
+  --news-card-separator-color: var(--color-gray-700); /* Цвет для разделителя в карточке */
+  --news-card-text-color: var(--color-gray-700); /* Цвет для текста в карточке */
+  --news-card-title-color: var(--color-gray-900); /* Цвет для заголовка новости */
+  --news-card-description-color: var(--color-gray-600); /* Цвет для описания новости */
+  --news-card-link-text-color: var(--color-gray-900); /* Цвет текста ссылки в карточке */
+  --news-card-link-hover-text-color: var(--color-primary); /* Цвет текста ссылки при наведении */
 }
