@@ -1,5 +1,6 @@
 @import './styles/global/media.css';
 @import './styles/colors/colors.css';
+@import './styles/colors/light.css';
 @import './styles/normalize.css';
 @import './styles/global/utility.css';
 @import './styles/components/container.css';
@@ -8,4 +9,4 @@
 @import './styles/components/nav.css';
 @import './styles/components/footer.css';
 @import './styles/components/banner.css';
-@import './styles/colors/light.css';
+@import './styles/components/latest-news.css';
