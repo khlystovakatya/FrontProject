@@ -18,13 +18,3 @@
 .page__footer {
   flex-shrink: 0;
 }
-
-.background-section {
-  margin-top: 304px;
-  background-image: url('./images/Background.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: calc(100vh - 304px);
-  position: relative;
-}
