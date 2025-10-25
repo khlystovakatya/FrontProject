@@ -1,0 +1,29 @@
+.banner {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.banner__statistic-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 48px;
+}
+
+.banner__statistic-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner__statistic-img {
+}
+
+.banner__statistic-caption {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--banner-statistic-caption);
+}
