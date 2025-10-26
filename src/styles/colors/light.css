@@ -52,7 +52,7 @@
   --news-card-separator-color: var(--color-gray-700); /* Цвет для разделителя в карточке */
   --news-card-text-color: var(--color-gray-700); /* Цвет для текста в карточке */
   --news-card-title-color: var(--color-gray-900); /* Цвет для заголовка новости */
-  --news-card-description-color: var(--color-gray-600); /* Цвет для описания новости */
+  --news-card-description-color: var(--color-gray-600); /* Цвет для описания нов  ости */
   --news-card-link-text-color: var(--color-gray-900); /* Цвет текста ссылки в карточке */
   --news-card-link-hover-text-color: var(--color-primary); /* Цвет текста ссылки при наведении */
 
@@ -63,4 +63,10 @@
   --careers-button-bg: var(--color-primary); /* Цвет фона кнопки в разделе Careers */
   --careers-button-hover-bg: var(--color-primary-hover); /* Цвет фона кнопки при наведении */
   --careers-button-text-color: var(--color-white); /* Цвет текста на кнопке */
+
+  /* Цвета для faq */
+  --faq-title-color: var(--color-gray-900); /* Цвет заголовка в разделе FAQ */
+  --faq-text-color: var(--color-gray-900); /* Цвет текста в вопросах */
+  --faq-answer-text-color: var(--color-gray-700); /* Цвет текста в ответах */
+  --faq-question-hover-text-color: var(--color-primary); /* Цвет текста вопроса при наведении */
 }
