@@ -27,3 +27,49 @@
   text-align: center;
   color: var(--banner-statistic-caption);
 }
+
+.banner__wrapper {
+  display: flex;
+  gap: 80px;
+}
+
+.banner__title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--banner-title-color);
+}
+
+.banner__values {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 48px 80px;
+}
+
+.banner__value {
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+}
+
+.banner__value-icon {
+  margin-bottom: 24px;
+}
+
+.banner__value-title {
+  margin-bottom: 8px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--banner-value-title-color);
+}
+
+.banner__value-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--banner-value-description-color);
+}
