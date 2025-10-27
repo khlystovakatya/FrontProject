@@ -27,6 +27,8 @@
 
 .careers__left {
   flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .careers__image {
@@ -129,6 +131,9 @@
   .careers__right {
     flex: none;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое */
   }
 
   .careers__right {
@@ -139,9 +144,19 @@
   .careers__button {
     margin: 20px auto 0;
   }
+
+  .careers__image {
+    width: 400px;
+    height: 348px;
+  }
 }
 
 @media (width <= 768px) {
+  .careers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .careers__title {
     font-size: 36px;
   }
@@ -151,7 +166,61 @@
   }
 
   .careers__image {
-    width: 300px;
-    height: 261px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 450 / 391;
+  }
+
+  .careers__button {
+    width: 180px;
+    height: 48px;
+  }
+}
+
+@media (width <= 480px) {
+  .careers {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .careers__container {
+    gap: 30px;
+  }
+
+  .careers__title {
+    font-size: 28px;
+  }
+
+  .careers__description {
+    font-size: 16px;
+  }
+
+  .careers__image {
+    max-width: 280px;
+  }
+
+  .careers__button {
+    width: 100%;
+    max-width: 200px;
+    height: 44px;
+  }
+
+  .careers__right {
+    gap: 16px;
+  }
+}
+
+@media (width <= 360px) {
+  .careers__title {
+    font-size: 24px;
+  }
+
+  .careers__description {
+    font-size: 15px;
+  }
+
+  .careers__image {
+    max-width: 250px;
   }
 }
