@@ -72,4 +72,15 @@
   --faq-text-color: var(--color-gray-900); /* Цвет текста в вопросах */
   --faq-answer-text-color: var(--color-gray-700); /* Цвет текста в ответах */
   --faq-question-hover-text-color: var(--color-primary); /* Цвет текста вопроса при наведении */
+
+  /* Цвета для seo-analysis */
+  --seo-analysis-background-color: var(--color-primary); /* Фон для seo-analysis */
+  --seo-analysis-title-color: var(--color-white); /* Цвет заголовка в seo-analysis */
+  --seo-analysis-label-color: var(--color-white); /* Цвет меток в seo-analysis */
+  --seo-analysis-input-background: var(--color-gray-200); /* Цвет фона для input в seo-analysis */
+  --seo-analysis-input-border-color: var(--color-gray-400); /* Цвет границы для input в seo-analysis */
+  --seo-analysis-input-text-color: var(--color-gray-600); /* Цвет текста в input */
+  --seo-analysis-submit-button-bg: var(--color-gray-900); /* Фон кнопки отправки */
+  --seo-analysis-submit-button-hover-bg: var(--color-gray-800); /* Фон кнопки при наведении */
+  --seo-analysis-submit-button-text-color: var(--color-white); /* Цвет текста на кнопке отправки */
 }
