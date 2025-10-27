@@ -1,0 +1,55 @@
+.card-awards {
+  padding-bottom: 120px;
+  display: flex;
+  gap: 135px;
+  align-items: center;
+}
+
+.card-awards__shape-img {
+  width: 285px;
+  height: 488px;
+}
+
+.card-awards__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.card-awards__title {
+  margin-top: auto;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--card-awards-title-color);
+}
+
+.card-awards__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 80px;
+  max-width: 760px;
+}
+
+.card-awards__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 340px;
+}
+
+.card-awards__item-icon {
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+}
+
+.card-awards__item-description {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--card-awards-item-desctiption-color);
+  margin: 0;
+}
