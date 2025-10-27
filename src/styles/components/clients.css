@@ -1,0 +1,28 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.clients__title {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: var(--clients-title-color);
+  text-align: center;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  gap: 40px 102px;
+}
+
+.clients__item {
+}
+
+.clients__img {
+  max-width: 120px;
+  max-height: 64px;
+}

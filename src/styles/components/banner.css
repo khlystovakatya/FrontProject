@@ -35,7 +35,7 @@
 }
 
 .banner__title {
-  font-family: var(--font-family);
+  font-family: Lato, Helvetica, Arial, sans-serif;
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
@@ -60,7 +60,7 @@
 
 .banner__value-title {
   margin-bottom: 8px;
-  font-family: var(--font-family);
+  font-family: Lato, Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -68,7 +68,7 @@
 }
 
 .banner__value-description {
-  font-family: var(--font-family);
+  font-family: Lato, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;

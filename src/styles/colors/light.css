@@ -42,6 +42,7 @@
   --button-sound-hover-bg: var(--color-gray-400);
   --button-sound-active-bg: var(--color-gray-400);
   --button-sound-icon-color: var(--color-white);
+  --clients-title-color: var(--color-gray-900);
 
   /* Цвета для latest-news */
   --latest-news-title-color: var(--color-gray-900); /* Цвет заголовка новостей */
