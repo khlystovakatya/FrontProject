@@ -208,6 +208,20 @@
   .latest-news__container {
     gap: 40px;
   }
+
+  .news-card {
+    width: 350px;
+  }
+
+  .news-card__image {
+    width: 350px;
+    height: 270px;
+  }
+
+  .news-card__title,
+  .news-card__description {
+    width: 350px;
+  }
 }
 
 @media (width <= 1024px) {
@@ -219,12 +233,115 @@
   .latest-news__left {
     flex: none;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+    align-items: center; /* Центрируем только левую колонку */
+    text-align: center; /* Центрируем текст в левой колонке */
+    margin: 0 auto; /* Центрируем саму левую колонку */
+  }
+
+  .latest-news__subtitle {
+    width: 100%; /* Убираем фиксированную ширину */
+    height: auto; /* Убираем фиксированную высоту */
+    justify-content: center; /* Центрируем текст внутри */
   }
 
   .latest-news__right {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .news-card {
+    text-align: left;
+  }
+}
+
+@media (width <= 768px) {
+  .latest-news {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .latest-news__title {
+    font-size: 36px;
+  }
+
+  .latest-news__subtitle {
+    font-size: 18px;
+  }
+
+  .latest-news__right {
+    gap: 20px;
+  }
+
+  .news-card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .news-card__image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .news-card__title,
+  .news-card__description {
+    width: 100%;
+  }
+}
+
+@media (width <= 480px) {
+  .latest-news {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .latest-news__title {
+    font-size: 28px;
+  }
+
+  .latest-news__subtitle {
+    font-size: 16px;
+  }
+
+  .latest-news__button {
+    width: 160px;
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .news-card__image {
+    height: 200px;
+  }
+
+  .news-card__title {
+    font-size: 18px;
+  }
+
+  .news-card__description {
+    font-size: 15px;
+  }
+
+  .latest-news__left {
+    gap: 16px;
+  }
+}
+
+@media (width <= 360px) {
+  .latest-news__title {
+    font-size: 24px;
+  }
+
+  .latest-news__subtitle {
+    font-size: 15px;
+  }
+
+  .news-card__meta {
+    gap: 8px;
+  }
+
+  .news-card__info {
+    gap: 6px;
   }
 }
