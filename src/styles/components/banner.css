@@ -30,6 +30,7 @@
 
 .banner__wrapper {
   display: flex;
+  max-width: 100%;
   gap: 80px;
 }
 
