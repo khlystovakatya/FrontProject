@@ -5,6 +5,7 @@
 }
 
 .page__header {
+  background: url('/images/background.jpg') center/cover no-repeat;
   flex-shrink: 0;
 }
 

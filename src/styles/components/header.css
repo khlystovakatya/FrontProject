@@ -1,52 +1,18 @@
 /* Основной блок header */
-.page__header {
+.header {
   position: relative;
   width: 100%;
-  min-height: 661px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('/images/background.jpg') center/cover no-repeat;
   overflow: hidden;
-  padding: 180px 0 80px;
+  padding-top: 20px;
+  padding-bottom: 80px;
   box-sizing: border-box;
 }
 
-.breadcrumbs {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  z-index: 2;
-  margin-bottom: 20px;
-}
-
-.breadcrumbs__link {
-  font-size: 14px;
-  color: var(--breadcrumbs-text);
-  font-family: Ubuntu, Helvetica, Arial, sans-serif;
-  opacity: 0.6;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
-}
-
-.breadcrumbs__link:hover {
-  opacity: 1;
-}
-
-.breadcrumbs__separator {
-  width: 16px;
-  height: 16px;
-  opacity: 0.6;
-}
-
-.breadcrumbs__current {
-  font-size: 14px;
-  color: var(--breadcrumbs-text);
-  opacity: 0.6;
-}
-
 /* Заголовок */
-.page__header-title {
+.header__title {
   font-size: 72px;
   font-weight: 900;
   font-family: Lato, Helvetica, Arial, sans-serif;
@@ -59,7 +25,7 @@
 }
 
 /* Описание */
-.page__header-description {
+.header__description {
   width: 810px;
   max-width: 90%;
   font-size: 20px;
@@ -73,7 +39,7 @@
 }
 
 /* Блок услуг */
-.page__header-services {
+.header__services {
   display: flex;
   align-items: center;
   gap: 94px;
@@ -82,38 +48,16 @@
   justify-content: center;
 }
 
-.page__header-service {
+.header__service {
   display: flex;
   align-items: center;
 }
 
-.page__header-divider {
+.header__divider {
   width: 1px;
   height: 40px;
   opacity: 0.4;
   background: var(--page-header-divider-bg);
-}
-
-/* Карточка услуги */
-.service-card {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.service-card__icon {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-}
-
-.service-card__title {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--service-card-text);
-  font-family: Lato, Helvetica, Arial, sans-serif;
-  margin: 0;
-  white-space: nowrap;
 }
 
 /* Адаптивность header */
