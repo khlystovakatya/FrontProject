@@ -1,24 +1,27 @@
 .seo-analysis {
-  position: relative;
-  width: 1230px;
-  height: 243px;
+  margin: 0 auto;
   background: var(--seo-analysis-background-color) url('/images/seo-analysis-bg.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 4px;
-  overflow: hidden;
-  margin: 0 auto;
+}
+
+.seo-analysis__wrapper {
+  max-width: 1230px;
+  padding: 60px;
+  min-height: 243px;
 }
 
 .seo-analysis__container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 .seo-analysis__title {
-  /* position: absolute; */
+  position: absolute;
   top: 48px;
   left: 50%;
   transform: translateX(-50%);
@@ -30,22 +33,24 @@
   text-align: center;
   margin: 0;
   line-height: 1.3;
+  max-width: 600px;
 }
 
 .seo-analysis__form {
-  position: absolute;
-  top: 122px;
-  left: 60px;
   display: flex;
   align-items: flex-end;
-  gap: 24px;
+  gap: 30px;
 }
 
 .seo-analysis__field {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  height: 73px;
+}
+
+.seo-analysis__field--name,
+.seo-analysis__field--email {
+  width: 260px;
 }
 
 .seo-analysis__field--wide {
@@ -61,17 +66,10 @@
 }
 
 .seo-analysis__input-wrapper {
-  width: 260px;
   height: 44px;
   background: var(--seo-analysis-input-background);
   border: 1px solid var(--seo-analysis-input-border-color);
   border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-}
-
-.seo-analysis__field--wide .seo-analysis__input-wrapper {
-  width: 338px;
 }
 
 .seo-analysis__input {
@@ -83,23 +81,17 @@
   font-family: Lato, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: var(--seo-analysis-input-text-color);
-  box-sizing: border-box;
   outline: none;
 }
 
 .seo-analysis__submit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 44px;
   padding: 0 32px;
   background: var(--seo-analysis-submit-button-bg);
   border: none;
   border-radius: 4px;
-  cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
-  margin-bottom: 8px;
 }
 
 .seo-analysis__submit:hover {
@@ -117,51 +109,56 @@
 /* Адаптивность */
 @media (width <= 1300px) {
   .seo-analysis {
-    width: 100%;
-    max-width: 1230px;
-    margin: 0 auto;
+    margin: 0 20px;
   }
 }
 
 @media (width <= 1200px) {
-  .seo-analysis {
-    height: auto;
-    min-height: 243px;
-    padding: 48px 60px 80px;
-  }
-
-  .seo-analysis__title {
-    position: static;
-    transform: none;
-    width: 100%;
-    margin-bottom: 40px;
+  .seo-analysis__container {
+    gap: 30px;
   }
 
   .seo-analysis__form {
-    position: static;
+    gap: 25px;
+  }
+}
+
+@media (width <= 1024px) {
+  .seo-analysis {
+    margin: 0 15px;
+  }
+
+  .seo-analysis__container {
+    gap: 25px;
+  }
+
+  .seo-analysis__title {
+    font-size: 28px;
+  }
+
+  .seo-analysis__form {
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
   }
 
-  .seo-analysis__field {
-    height: auto;
-  }
-
-  .seo-analysis__submit {
-    margin-bottom: 0;
-    margin-top: 8px;
+  .seo-analysis__field--name,
+  .seo-analysis__field--email,
+  .seo-analysis__field--wide {
+    max-width: 300px;
   }
 }
 
 @media (width <= 768px) {
   .seo-analysis {
-    padding: 40px 20px 60px;
+    margin: 0 10px;
+  }
+
+  .seo-analysis__container {
+    gap: 20px;
   }
 
   .seo-analysis__title {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 24px;
   }
 
   .seo-analysis__form {
@@ -170,40 +167,35 @@
     gap: 15px;
   }
 
-  .seo-analysis__field {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .seo-analysis__input-wrapper {
-    width: 100%;
-  }
-
+  .seo-analysis__field--name,
+  .seo-analysis__field--email,
   .seo-analysis__field--wide {
     width: 100%;
     max-width: 400px;
   }
 
-  .seo-analysis__field--wide .seo-analysis__input-wrapper {
-    width: 100%;
-  }
-
   .seo-analysis__submit {
     width: 100%;
     max-width: 200px;
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin-top: 5px;
   }
 }
 
 @media (width <= 480px) {
   .seo-analysis {
-    padding: 30px 16px 50px;
+    margin: 0 8px;
+  }
+
+  .seo-analysis__wrapper {
+    padding: 25px 16px;
+  }
+
+  .seo-analysis__container {
+    gap: 15px;
   }
 
   .seo-analysis__title {
-    font-size: 24px;
-    margin-bottom: 25px;
+    font-size: 22px;
   }
 
   .seo-analysis__input {
