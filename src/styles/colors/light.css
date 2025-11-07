@@ -48,6 +48,9 @@
   --card-team-item-post-color: var(--color-gray-700);
   --card-awards-title-color: var(--color-gray-900);
   --card-awards-item-desctiption-color: var(--color-gray-800);
+  --card-philosophy-bg: var(--color-white);
+  --card-philosophy-title-color: var(--color-gray-900);
+  --card-philosophy-description-color: var(--color-gray-700);
 
   /* Цвета для latest-news */
   --latest-news-title-color: var(--color-gray-900); /* Цвет заголовка новостей */
