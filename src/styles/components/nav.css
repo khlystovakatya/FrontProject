@@ -95,7 +95,7 @@
 /* Кнопка CTA */
 .nav__cta {
   position: static;
-  margin-left: auto; /* Прижимаем к правому краю */
+  margin-left: 16px;
 }
 
 .nav__button {
@@ -132,6 +132,42 @@
   font-family: Lato, Helvetica, Arial, sans-serif;
   line-height: 325%;
   letter-spacing: 0.03em;
+}
+
+/* Переключатель темы */
+.nav__theme-toggle {
+  margin-left: auto;
+}
+
+.nav__theme-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 2px solid var(--theme-toggle-button-border);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--theme-toggle-button-color);
+}
+
+.nav__theme-button:hover {
+  border-color: var(--theme-toggle-button-hover-border);
+  background: var(--theme-toggle-button-hover-bg);
+}
+
+.nav__theme-icon {
+  width: 20px;
+  height: 20px;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.nav__theme-icon--dark {
+  display: none;
 }
 
 /* Адаптивность для планшетов */

@@ -21,6 +21,12 @@
   --nav-button-hover-bg: var(--color-primary-hover); /* Цвет фона кнопки при наведении */
   --nav-button-active-bg: var(--color-primary-active); /* Цвет фона кнопки при активации */
   --nav-button-text-color: var(--color-white); /* Цвет текста кнопки */
+
+  /* Переключатель темы */
+  --theme-toggle-button-border: rgb(255 255 255 / 30%); /* Цвет границы переключателя */
+  --theme-toggle-button-hover-border: var(--color-white); /* Цвет границы при наведении */
+  --theme-toggle-button-hover-bg: rgb(255 255 255 / 10%); /* Цвет фона при наведении */
+  --theme-toggle-button-color: var(--color-white); /* Цвет иконки переключателя */
   --footer-bg-color: var(--color-gray-900);
   --footer-description-color: var(--color-white);
   --footer-text-color: var(--color-white);
