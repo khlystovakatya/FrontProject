@@ -3,6 +3,8 @@
 
   /* Основные цвета */
   --header-text: var(--color-white); /* Белый текст для хедера */
+  --bg-color-primary: var(--color-white);
+  --bg-color-secondary: var(--color-gray-200);
 
   /* Текстовые цвета для breadcrumbs и заголовков */
   --breadcrumbs-text: var(--color-white); /* Белый цвет текста для breadcrumbs */

@@ -1,6 +1,112 @@
-:root {
+[data-theme='dark'] {
   color-scheme: dark;
 
-  --color-primary: var(--color-black);
-  --color-secondary: var(--color-white);
+  /* Основные цвета */
+  --header-text: var(--color-white);
+  --bg-color-primary: var(--color-gray-900);
+  --bg-color-secondary: var(--color-gray-800);
+
+  /* Текстовые цвета для breadcrumbs и заголовков */
+  --breadcrumbs-text: var(--color-white); /* Белый цвет текста для breadcrumbs */
+  --page-header-title-text: var(--color-white); /* Белый цвет для заголовка */
+  --page-header-description-text: var(--color-white); /* Белый цвет для описания */
+
+  /* Цвет для разделителя в блоке услуг */
+  --page-header-divider-bg: var(--color-gray-600);
+
+  /* Цвет для карточек услуг */
+  --service-card-text: var(--color-white);
+
+  /* Навигация */
+  --nav-text-color: var(--color-white); /* Цвет текста навигационных элементов */
+  --nav-button-bg: var(--color-primary); /* Цвет фона кнопки */
+  --nav-button-hover-bg: var(--color-primary-hover); /* Цвет фона кнопки при наведении */
+  --nav-button-active-bg: var(--color-primary-active); /* Цвет фона кнопки при активации */
+  --nav-button-text-color: var(--color-white); /* Цвет текста кнопки */
+
+  /* Переключатель темы */
+  --theme-toggle-button-border: rgb(255 255 255 / 50%);
+  --theme-toggle-button-hover-border: var(--color-white);
+  --theme-toggle-button-hover-bg: rgb(255 255 255 / 20%);
+  --theme-toggle-button-color: var(--color-white);
+
+  /* Футер */
+  --footer-bg-color: var(--color-gray-800);
+  --footer-description-color: var(--color-gray-300);
+  --footer-text-color: var(--color-gray-300);
+  --footer-icon-color: var(--color-gray-300);
+  --footer-splitter-color: var(--color-gray-600);
+  --footer-copyright-bg-color: rgb(255 255 255 / 10%);
+
+  /* Баннеры и статистика */
+  --banner-statistic-caption: var(--color-gray-400);
+  --banner-title-color: var(--color-white);
+  --banner-value-title-color: var(--color-white);
+  --banner-value-description-color: var(--color-gray-400);
+  --media-content-image-darkened: var(--color-gray-800);
+  --button-play-bg: var(--color-primary);
+  --button-play-hover-bg: var(--color-primary-hover);
+  --button-play-active-bg: var(--color-primary-active);
+  --button-sound-bg: var(--color-gray-600);
+  --button-sound-hover-bg: var(--color-gray-500);
+  --button-sound-active-bg: var(--color-gray-400);
+  --button-sound-icon-color: var(--color-white);
+
+  /* Клиенты */
+  --clients-title-color: var(--color-white);
+
+  /* Команда */
+  --card-team-title-color: var(--color-white);
+  --card-team-item-name-color: var(--color-gray-300);
+  --card-team-item-post-color: var(--color-gray-500);
+  --card-awards-title-color: var(--color-white);
+  --card-awards-item-desctiption-color: var(--color-gray-300);
+  --card-philosophy-bg: var(--color-gray-800);
+  --card-philosophy-title-color: var(--color-white);
+  --card-philosophy-description-color: var(--color-gray-400);
+
+  /* Latest News */
+  --latest-news-title-color: var(--color-white);
+  --latest-news-subtitle-color: var(--color-gray-400);
+  --latest-news-button-bg: var(--color-primary);
+  --latest-news-button-hover-bg: var(--color-primary-hover);
+  --latest-news-button-text-color: var(--color-white);
+
+  /* Карточки новостей */
+  --news-card-category-color: var(--color-gray-400);
+  --news-card-separator-color: var(--color-gray-600);
+  --news-card-text-color: var(--color-gray-400);
+  --news-card-title-color: var(--color-white);
+  --news-card-description-color: var(--color-gray-500);
+  --news-card-link-text-color: var(--color-gray-300);
+  --news-card-link-hover-text-color: var(--color-primary);
+
+  /* Careers */
+  --careers-background-color: var(--color-gray-800);
+  --careers-title-color: var(--color-white);
+  --careers-description-color: var(--color-gray-300);
+  --careers-button-bg: var(--color-primary);
+  --careers-button-hover-bg: var(--color-primary-hover);
+  --careers-button-text-color: var(--color-white);
+
+  /* FAQ */
+  --faq-title-color: var(--color-white);
+  --faq-text-color: var(--color-gray-300);
+  --faq-answer-text-color: var(--color-gray-400);
+  --faq-question-hover-text-color: var(--color-primary);
+
+  /* SEO Analysis */
+  --seo-analysis-background-color: var(--color-gray-800);
+  --seo-analysis-title-color: var(--color-white);
+  --seo-analysis-label-color: var(--color-white);
+  --seo-analysis-input-background: var(--color-gray-700);
+  --seo-analysis-input-border-color: var(--color-gray-600);
+  --seo-analysis-input-text-color: var(--color-gray-300);
+  --seo-analysis-submit-button-bg: var(--color-primary);
+  --seo-analysis-submit-button-hover-bg: var(--color-primary-hover);
+  --seo-analysis-submit-button-text-color: var(--color-white);
+}
+
+[data-theme='dark'] .banner__statistic-img {
+  filter: invert(1) brightness(1.5);
 }

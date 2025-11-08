@@ -1,5 +1,3 @@
-import './index.css';
-
 document.addEventListener('DOMContentLoaded', () => {
   class ThemeToggle {
     constructor() {
@@ -7,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       this.html = document.documentElement;
       this.currentTheme = window.localStorage.getItem('theme') || 'light';
 
+      console.log('Initial theme:', this.currentTheme);
       this.init();
     }
 
@@ -18,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setTheme(theme) {
+      console.log('Setting theme to:', theme);
       this.html.setAttribute('data-theme', theme);
       window.localStorage.setItem('theme', theme);
       this.currentTheme = theme;
@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     toggleTheme() {
       const newTheme = this.currentTheme === 'light' ? 'dark' : 'light';
+      console.log('Toggling to:', newTheme);
       this.setTheme(newTheme);
     }
   }
