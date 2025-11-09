@@ -1,17 +1,16 @@
 .breadcrumbs {
   display: flex;
   align-items: center;
-  gap: 8px;
-  z-index: 2;
-  margin-bottom: 20px;
+  gap: 0.5rem;
+  margin: 0 auto 1.875rem;
+  justify-content: center;
 }
 
 .breadcrumbs__link {
-  font-size: 14px;
+  font-size: 1rem;
   color: var(--breadcrumbs-text);
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
   opacity: 0.6;
-  text-decoration: none;
   transition: opacity 0.3s ease;
 }
 
@@ -20,13 +19,69 @@
 }
 
 .breadcrumbs__separator {
-  width: 16px;
-  height: 16px;
+  width: 0.875rem;
+  height: 0.875rem;
   opacity: 0.6;
 }
 
 .breadcrumbs__current {
-  font-size: 14px;
+  font-size: 1rem;
   color: var(--breadcrumbs-text);
   opacity: 0.6;
+}
+
+/* 1024px - 1279px */
+@media (--lg-viewport) and (width < 80rem) {
+  .breadcrumbs {
+    margin: 0 auto 1.5625rem;
+    padding: 0 1.25rem;
+  }
+
+  .breadcrumbs__link,
+  .breadcrumbs__current {
+    font-size: 0.9375rem;
+  }
+}
+
+/* 768px - 1023px */
+@media (--md-viewport) and (width < 64rem) {
+  .breadcrumbs {
+    margin: 0 auto 1.25rem;
+  }
+}
+
+/* 576px - 767px */
+@media (--sm-viewport) and (width < 48rem) {
+  .breadcrumbs {
+    margin-bottom: 1.25rem;
+  }
+
+  .breadcrumbs__link,
+  .breadcrumbs__current {
+    font-size: 0.875rem;
+  }
+}
+
+/* 375px - 575px */
+@media (--xs-viewport) and (width < 36rem) {
+  .breadcrumbs {
+    margin: 0 auto 0.9375rem;
+  }
+
+  .breadcrumbs__link,
+  .breadcrumbs__current {
+    font-size: 0.8125rem;
+  }
+}
+
+/* Меньше 375px */
+@media (width < 23.4375rem) {
+  .breadcrumbs {
+    margin: 0 auto 0.9375rem;
+  }
+
+  .breadcrumbs__link,
+  .breadcrumbs__current {
+    font-size: 0.8125rem;
+  }
 }
