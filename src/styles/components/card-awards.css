@@ -1,55 +1,212 @@
 .card-awards {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
   display: flex;
-  gap: 135px;
+  flex-direction: column;
+  gap: 40px;
   align-items: center;
 }
 
 .card-awards__shape-img {
-  width: 285px;
-  height: 488px;
+  width: 200px;
+  height: 342px;
+  order: -1;
 }
 
 .card-awards__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
+  width: 100%;
 }
 
 .card-awards__title {
-  margin-top: auto;
   font-family: Lato, Helvetica, Arial, sans-serif;
   font-weight: 900;
-  font-size: 46px;
+  font-size: 28px;
   line-height: 130%;
   color: var(--card-awards-title-color);
+  text-align: center;
+  margin: 0;
 }
 
 .card-awards__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 48px 80px;
-  max-width: 760px;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
 }
 
 .card-awards__item {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  width: 340px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  text-align: center;
 }
 
 .card-awards__item-icon {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   flex-shrink: 0;
 }
 
 .card-awards__item-description {
   font-family: Lato, Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 160%;
   color: var(--card-awards-item-desctiption-color);
   margin: 0;
+}
+
+@media (width >= 576px) {
+  .card-awards {
+    padding-bottom: 70px;
+    gap: 50px;
+  }
+
+  .card-awards__shape-img {
+    width: 220px;
+    height: 376px;
+  }
+
+  .card-awards__wrapper {
+    gap: 45px;
+  }
+
+  .card-awards__title {
+    font-size: 32px;
+  }
+
+  .card-awards__list {
+    gap: 35px;
+  }
+
+  .card-awards__item {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 18px;
+  }
+
+  .card-awards__item-icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .card-awards__item-description {
+    font-size: 15px;
+  }
+}
+
+@media (width >= 768px) {
+  .card-awards {
+    padding-bottom: 80px;
+    gap: 60px;
+  }
+
+  .card-awards__shape-img {
+    width: 240px;
+    height: 411px;
+  }
+
+  .card-awards__wrapper {
+    gap: 50px;
+  }
+
+  .card-awards__title {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .card-awards__list {
+    flex-flow: row wrap;
+    gap: 40px 50px;
+  }
+
+  .card-awards__item {
+    width: calc(50% - 25px);
+  }
+
+  .card-awards__item-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (width >= 1024px) {
+  .card-awards {
+    padding-bottom: 100px;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .card-awards__shape-img {
+    width: 265px;
+    height: 454px;
+    order: 0;
+  }
+
+  .card-awards__wrapper {
+    gap: 55px;
+  }
+
+  .card-awards__title {
+    font-size: 42px;
+    margin-top: auto;
+  }
+
+  .card-awards__list {
+    gap: 45px 70px;
+    max-width: 680px;
+  }
+
+  .card-awards__item {
+    width: calc(50% - 35px);
+  }
+
+  .card-awards__item-icon {
+    width: 73px;
+    height: 73px;
+  }
+
+  .card-awards__item-description {
+    font-size: 16px;
+  }
+}
+
+@media (width >= 1280px) {
+  .card-awards {
+    padding-bottom: 120px;
+    gap: 135px;
+  }
+
+  .card-awards__shape-img {
+    width: 285px;
+    height: 488px;
+  }
+
+  .card-awards__wrapper {
+    gap: 60px;
+  }
+
+  .card-awards__title {
+    font-size: 46px;
+  }
+
+  .card-awards__list {
+    gap: 48px 80px;
+    max-width: 760px;
+  }
+
+  .card-awards__item {
+    width: 340px;
+  }
+
+  .card-awards__item-icon {
+    width: 75px;
+    height: 75px;
+  }
 }
