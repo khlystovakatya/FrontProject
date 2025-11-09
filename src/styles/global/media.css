@@ -1,3 +1,4 @@
+@custom-media --xs-viewport (width >=375);
 @custom-media --sm-viewport (width >= 576px);
 @custom-media --md-viewport (width >= 768px);
 @custom-media --lg-viewport (width >= 1024px);
