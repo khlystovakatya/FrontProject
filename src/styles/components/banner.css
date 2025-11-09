@@ -56,23 +56,6 @@
     padding-bottom: 48px;
   }
 
-  .banner__statistic-list {
-    gap: 38px;
-  }
-
-  .banner__statistic-item {
-    gap: 12px;
-  }
-
-  .banner__statistic-img {
-    height: 118px;
-    width: 118px;
-  }
-
-  .banner__statistic-caption {
-    font-size: 13px;
-  }
-
   .banner__wrapper {
     display: flex;
     max-width: 100%;
