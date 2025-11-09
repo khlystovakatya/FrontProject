@@ -10,6 +10,11 @@
 @media (--sm-viewport) {
   .container {
     max-width: 576px;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -30,5 +35,10 @@
 @media (--xl-viewport) {
   .container {
     max-width: 1312px;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
