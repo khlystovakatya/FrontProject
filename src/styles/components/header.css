@@ -1,246 +1,219 @@
-/* Основной блок header */
 .header {
-  position: relative;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  padding-top: 20px;
-  padding-bottom: 80px;
-  box-sizing: border-box;
+  justify-content: center;
+  padding: 2.5rem 0 5rem;
 }
 
-/* Заголовок */
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+
 .header__title {
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 900;
   font-family: Lato, Helvetica, Arial, sans-serif;
   color: var(--page-header-title-text);
   text-align: center;
-  z-index: 2;
-  margin: 0 0 20px;
-  max-width: 90%;
+  margin: 0 0 1.5rem;
   line-height: 1.2;
 }
 
-/* Описание */
 .header__description {
-  width: 810px;
-  max-width: 90%;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--page-header-description-text);
   font-family: Lato, Helvetica, Arial, sans-serif;
   text-align: center;
   opacity: 0.6;
-  z-index: 2;
-  line-height: 1.6;
-  margin: 0 0 80px;
+  line-height: 1.5;
+  margin: 0 0 5rem;
+  max-width: 50.625rem;
 }
 
-/* Блок услуг */
 .header__services {
   display: flex;
   align-items: center;
-  gap: 94px;
-  z-index: 2;
-  flex-wrap: wrap;
+  gap: 5.875rem;
   justify-content: center;
+  max-width: 76.9375rem;
+  margin: 0 auto 5rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .header__service {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.service-card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--service-card-text);
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
 }
 
 .header__divider {
-  width: 1px;
-  height: 40px;
+  flex-shrink: 0;
   opacity: 0.4;
-  background: var(--page-header-divider-bg);
+  display: flex;
+  align-items: center;
 }
 
-/* Адаптивность header */
-@media (width <= 1200px) {
-  .page__header-services {
-    gap: 60px;
-  }
-
-  .page__header-title {
-    font-size: 64px;
-  }
+.header__divider svg {
+  width: 1px;
+  height: 2.5rem;
 }
 
-@media (width <= 1024px) {
-  .page__header {
-    min-height: 600px;
-    padding: 160px 0 60px;
+/* 1024px - 1279px */
+@media (--lg-viewport) and (width < 80rem) {
+  .header__content {
+    max-width: 60rem;
+    padding-top: 2.5rem;
   }
 
-  .page__header-title {
-    font-size: 56px;
+  .header__title {
+    font-size: 3.25rem;
   }
 
-  .page__header-description {
-    font-size: 18px;
-    margin-bottom: 60px;
+  .header__description {
+    font-size: 1.0625rem;
+    margin-bottom: 3.125rem;
+    max-width: 40.625rem;
   }
 
-  .page__header-services {
-    gap: 40px;
+  .header__services {
+    gap: 1.5625rem;
+    margin-bottom: 4.375rem;
   }
 
-  .service-card__title {
-    font-size: 18px;
-  }
-}
-
-@media (width <= 900px) {
-  .page__header {
-    min-height: 550px;
-    padding: 140px 0 50px;
-  }
-
-  .page__header-title {
-    font-size: 48px;
-  }
-
-  .page__header-description {
-    font-size: 17px;
-    margin-bottom: 50px;
-  }
-
-  .page__header-services {
-    gap: 30px;
-  }
-
-  .service-card {
-    gap: 15px;
-  }
-
-  .service-card__icon {
-    width: 35px;
-    height: 35px;
-  }
-
-  .service-card__title {
-    font-size: 17px;
+  .header__divider svg {
+    height: 2rem;
   }
 }
 
-@media (width <= 768px) {
-  .page__header {
-    min-height: 500px;
-    padding: 120px 20px 40px;
+/* 768px - 1023px */
+@media (--md-viewport) and (width < 64rem) {
+  .header__title {
+    font-size: 2.625rem;
+    margin-bottom: 1.5rem;
   }
 
-  .page__header-title {
-    font-size: 42px;
+  .header__description {
+    font-size: 1rem;
+    margin-bottom: 3.75rem;
+    max-width: 35rem;
+    line-height: 1.5;
   }
 
-  .page__header-description {
-    font-size: 16px;
-    margin-bottom: 40px;
+  .header__services {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3.75rem;
+  }
+}
+
+/* 576px - 767px */
+@media (--sm-viewport) and (width < 48rem) {
+  .header__description {
+    margin-bottom: 3.75rem;
+    max-width: 20.9375rem;
   }
 
-  .page__header-services {
+  .header__title {
+    font-size: 2rem;
+  }
+
+  .header__services {
     flex-direction: column;
-    gap: 25px;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 3.75rem;
   }
 
-  .page__header-divider {
-    width: 60px;
+  .header__divider svg {
+    width: 3.125rem;
     height: 1px;
   }
-
-  .service-card {
-    gap: 15px;
-  }
-
-  .service-card__icon {
-    width: 32px;
-    height: 32px;
-  }
-
-  .service-card__title {
-    font-size: 16px;
-  }
 }
 
-@media (width <= 600px) {
-  .page__header {
-    min-height: 450px;
-    padding: 100px 16px 30px;
+/* 375px - 575px */
+@media (--xs-viewport) and (width < 36rem) {
+  .header__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
-  .page__header-title {
-    font-size: 36px;
+  .header__description {
+    font-size: 0.875rem;
+    margin-bottom: 2.5rem;
+    max-width: 20.9375rem;
+    line-height: 1.4;
+    padding: 0 1rem;
   }
 
-  .page__header-description {
-    font-size: 15px;
-    margin-bottom: 30px;
-  }
-
-  .page__header-services {
-    gap: 20px;
-  }
-
-  .service-card {
-    gap: 12px;
-  }
-
-  .service-card__icon {
-    width: 28px;
-    height: 28px;
-  }
-
-  .service-card__title {
-    font-size: 15px;
-  }
-}
-
-@media (width <= 480px) {
-  .page__header {
-    min-height: 400px;
-    padding: 80px 12px 20px;
-  }
-
-  .page__header-title {
-    font-size: 32px;
-  }
-
-  .page__header-description {
-    font-size: 14px;
-    margin-bottom: 25px;
-  }
-
-  .page__header-services {
-    gap: 15px;
-  }
-
-  .service-card {
+  .header__services {
     flex-direction: column;
-    text-align: center;
-    gap: 8px;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
   }
 
-  .service-card__title {
-    font-size: 14px;
-  }
-
-  .breadcrumbs__link,
-  .breadcrumbs__current {
-    font-size: 13px;
+  .header__divider svg {
+    width: 2.5rem;
+    height: 1px;
   }
 }
 
-@media (width <= 375px) {
-  .page__header-title {
-    font-size: 28px;
+/* Меньше 375px */
+@media (width < 23.4375rem) {
+  .header__content {
+    max-width: 20rem;
+    padding-top: 2rem;
   }
 
-  .page__header-description {
-    font-size: 13px;
+  .header__description {
+    padding: 0 1.25rem;
+    max-width: 18rem;
+    font-size: 0.8125rem;
+    margin-bottom: 2rem;
+  }
+
+  .header__title {
+    font-size: 1.75rem;
+    padding: 0 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .header__services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .header__divider svg {
+    width: 2rem;
+    height: 1px;
   }
 }

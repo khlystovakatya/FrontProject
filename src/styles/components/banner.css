@@ -56,7 +56,6 @@
   color: var(--banner-value-description-color);
 }
 
-/* 576px и выше */
 @media (--sm-viewport) {
   .banner {
     padding-top: 70px;
@@ -90,7 +89,6 @@
   }
 }
 
-/* 768px и выше */
 @media (--md-viewport) {
   .banner {
     padding-top: 85px;
@@ -133,7 +131,6 @@
   }
 }
 
-/* 1024px и выше */
 @media (--lg-viewport) {
   .banner {
     padding-top: 100px;
@@ -176,7 +173,6 @@
   }
 }
 
-/* 1280px и выше */
 @media (--xl-viewport) {
   .banner {
     padding-top: 120px;

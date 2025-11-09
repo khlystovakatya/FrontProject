@@ -1,31 +1,27 @@
 .seo-analysis {
   margin: 0 auto;
   background: var(--seo-analysis-background-color) url('/images/seo-analysis-bg.svg');
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 .seo-analysis__wrapper {
-  max-width: 1230px;
-  padding: 40px 60px;
-  min-height: auto;
+  max-width: 76.875rem;
+  padding: 2.5rem 3.75rem;
+  margin: 0 auto;
 }
 
 .seo-analysis__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .seo-analysis__title {
-  margin-top: 20px;
-  width: 100%;
+  margin-top: 1.25rem;
   text-align: center;
   font-family: Lato, Helvetica, Arial, sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 900;
   color: var(--seo-analysis-title-color);
   line-height: 1.3;
@@ -34,174 +30,257 @@
 .seo-analysis__form {
   display: flex;
   align-items: flex-end;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .seo-analysis__field {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .seo-analysis__field--name,
 .seo-analysis__field--email {
-  width: 260px;
+  width: 16.25rem;
 }
 
 .seo-analysis__field--wide {
-  width: 338px;
+  width: 21.125rem;
 }
 
 .seo-analysis__label {
   font-family: Lato, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--seo-analysis-label-color);
   font-weight: 400;
   line-height: 1;
 }
 
 .seo-analysis__input-wrapper {
-  height: 44px;
+  height: 2.75rem;
   background: var(--seo-analysis-input-background);
   border: 1px solid var(--seo-analysis-input-border-color);
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 .seo-analysis__input {
   width: 100%;
   height: 100%;
-  padding: 0 16px;
+  padding: 0 1rem;
   background: transparent;
   border: none;
   font-family: Lato, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--seo-analysis-input-text-color);
   outline: none;
 }
 
 .seo-analysis__submit {
-  height: 44px;
-  padding: 0 32px;
+  height: 2.75rem;
+  padding: 0 2rem;
   background: var(--seo-analysis-submit-button-bg);
   border: none;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .seo-analysis__submit:hover {
   background: var(--seo-analysis-submit-button-hover-bg);
-  transform: translateY(-1px);
+  transform: translateY(-0.0625rem);
 }
 
 .seo-analysis__submit-text {
   font-family: Lato, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   color: var(--seo-analysis-submit-button-text-color);
 }
 
-/* Адаптивность */
-@media (width <= 1300px) {
-  .seo-analysis {
-    margin: 0 20px;
-  }
-}
-
-@media (width <= 1200px) {
-  .seo-analysis__container {
-    gap: 30px;
-  }
-
-  .seo-analysis__form {
-    gap: 25px;
-  }
-}
-
-@media (width <= 1024px) {
-  .seo-analysis {
-    margin: 0 15px;
+/* 1024px - 1279px */
+@media (--lg-viewport) and (width < 80rem) {
+  .seo-analysis__wrapper {
+    max-width: 64rem;
+    padding: 2.5rem 3rem;
   }
 
   .seo-analysis__container {
-    gap: 25px;
+    gap: 1.875rem;
   }
 
-  .seo-analysis__title {
-    font-size: 28px;
-  }
-
-  .seo-analysis__form {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .seo-analysis__field--name,
-  .seo-analysis__field--email,
   .seo-analysis__field--wide {
-    max-width: 300px;
+    width: 20rem;
   }
 }
 
-@media (width <= 768px) {
+/* 768px - 1023px */
+@media (--md-viewport) and (width < 64rem) {
   .seo-analysis {
-    margin: 0 10px;
+    margin: 0 0.9375rem;
   }
 
   .seo-analysis__container {
-    gap: 20px;
+    gap: 1.5625rem;
+    align-items: center;
   }
 
   .seo-analysis__title {
-    font-size: 24px;
+    font-size: 1.75rem;
+    text-align: center;
   }
 
   .seo-analysis__form {
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 25rem;
+  }
+
+  .seo-analysis__field {
+    text-align: center;
   }
 
   .seo-analysis__field--name,
   .seo-analysis__field--email,
   .seo-analysis__field--wide {
     width: 100%;
-    max-width: 400px;
   }
 
   .seo-analysis__submit {
     width: 100%;
-    max-width: 200px;
-    margin-top: 5px;
+    margin-top: 0.625rem;
   }
 }
 
-@media (width <= 480px) {
+/* 576px - 767px */
+@media (--sm-viewport) and (width < 48rem) {
   .seo-analysis {
-    margin: 0 8px;
+    margin: 0 0.625rem;
   }
 
   .seo-analysis__wrapper {
-    padding: 25px 16px;
+    padding: 2rem 1.25rem;
   }
 
   .seo-analysis__container {
-    gap: 15px;
+    gap: 1.25rem;
+    align-items: center;
   }
 
   .seo-analysis__title {
-    font-size: 22px;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
-  .seo-analysis__input {
-    font-size: 13px;
+  .seo-analysis__form {
+    flex-direction: column;
+    gap: 0.9375rem;
+    width: 100%;
+    max-width: 25rem;
+  }
+
+  .seo-analysis__field {
+    text-align: center;
+  }
+
+  .seo-analysis__field--name,
+  .seo-analysis__field--email,
+  .seo-analysis__field--wide {
+    width: 100%;
   }
 
   .seo-analysis__submit {
-    height: 40px;
+    width: 100%;
+    margin-top: 0.3125rem;
+  }
+}
+
+/* 375px - 575px */
+@media (--xs-viewport) and (width < 36rem) {
+  .seo-analysis {
+    margin: 0 0.5rem;
+  }
+
+  .seo-analysis__wrapper {
+    padding: 1.5625rem 1rem;
+  }
+
+  .seo-analysis__container {
+    gap: 0.9375rem;
+  }
+
+  .seo-analysis__title {
+    font-size: 1.375rem;
+    text-align: center;
+  }
+
+  .seo-analysis__form {
+    flex-direction: column;
+    gap: 0.9375rem;
+    width: 100%;
+  }
+
+  .seo-analysis__field {
+    text-align: center;
+  }
+
+  .seo-analysis__field--name,
+  .seo-analysis__field--email,
+  .seo-analysis__field--wide {
+    width: 100%;
+  }
+
+  .seo-analysis__submit {
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 0.3125rem;
   }
 
   .seo-analysis__submit-text {
-    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
+
+/* Меньше 375px */
+@media (width < 23.4375rem) {
+  .seo-analysis {
+    margin: 0 0.375rem;
+  }
+
+  .seo-analysis__wrapper {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .seo-analysis__title {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .seo-analysis__form {
+    flex-direction: column;
+  }
+
+  .seo-analysis__field {
+    text-align: center;
+  }
+
+  .seo-analysis__field--name,
+  .seo-analysis__field--email,
+  .seo-analysis__field--wide {
+    width: 100%;
+  }
+
+  .seo-analysis__input-wrapper {
+    width: 100%;
+  }
+
+  .seo-analysis__submit {
+    width: 100%;
+    height: 2.85rem;
+    margin-top: 0.25rem;
+  }
+
+  .seo-analysis__submit-text {
+    font-size: 0.75rem;
   }
 }
