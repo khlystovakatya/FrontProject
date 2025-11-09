@@ -107,6 +107,6 @@
   --seo-analysis-submit-button-text-color: var(--color-white);
 }
 
-[data-theme='dark'] .banner__statistic-img {
+[data-theme='dark'] .statistic__img {
   filter: invert(1) brightness(1.5);
 }
