@@ -1,0 +1,31 @@
+.statistic {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.statistic__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 48px;
+}
+
+.statistic__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.statistic__img {
+  height: 148px;
+  width: 148px;
+}
+
+.statistic__caption {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--banner-statistic-caption);
+}
