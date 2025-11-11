@@ -437,6 +437,7 @@
 
   .footer__top {
     flex-wrap: nowrap;
+    padding-left: 2vw;
     padding-right: 5vw;
     gap: 80px;
   }
@@ -448,6 +449,7 @@
 
   .footer__awards {
     padding-bottom: 40px;
+    padding-left: 2vw;
     gap: 24px;
   }
 
@@ -462,6 +464,7 @@
   }
 
   .footer__copyright-wrapper {
+    padding-left: 2vw;
     gap: 4px;
   }
 
