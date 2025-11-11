@@ -432,12 +432,12 @@
 
 @media (--xl-viewport) {
   .footer {
-    padding-right: 7vw;
     padding-top: 80px;
   }
 
   .footer__top {
     flex-wrap: nowrap;
+    padding-right: 5vw;
     gap: 80px;
   }
 
